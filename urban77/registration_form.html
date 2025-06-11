@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Registration form</title>
+      <link rel="stylesheet" href="style.css">
+      <style>
+        body {
+             display: flex;
+            justify-content: center;
+             align-items: center;
+             min-height: 100vh;
+             background: url('Allimages/background.jpg') no-repeat;
+             background-size: cover;
+             background-position: center;
+}
+    </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="register">
+                <h2>Registration Form</h2>
+                <form id="register" action="registration.php" method="post">
+                    <label for="fullname">FullName :</label><br>
+                    <input type="text" name="fullname" placeholder="fullname" id="name"><br>
+                    <label for="username">Userame :</label><br>
+                    <input type="text" name="username" placeholder="username" id="name"><br>
+                    <label for="email">Email :</label><br>
+                    <input type="text" name="email" placeholder="email" id="name"><br>
+                    <label for="gender">Gender :</label><br>
+                    <input type="radio" name="gender" value="male" id="male"><span id="male">Male</span>
+                    <input type="radio" name="gender" value="female" id="female"><span id="female">Female</span><br>
+                    <label for="password">Password :</label><br>
+                    <input type="password" name="pass_word" placeholder="password" id="name"><br>
+                    <label for="repeat_password">Repeat password :</label><br>
+                    <input type="password" name="repeat_password" placeholder="repeat_password" id="name"><br>
+                    <label for="user_type">I'm :</label><br>
+                    <input type="radio" name="user_type" value="customer" id="user"><span id="user">Customer</span>
+                    <input type="radio" name="user_type" value="admin" id="user"><span id="user">Admin</span><br>
+                    <button type="submit" name="submit">Register</button><br>
+                    <p id="name">Already have an account?<a href="login_form.html" class="log">Login now</a></p>
+            </div>
+            <div>
+                <button type="button" id="home">Home</button>
+                <script language="javascript" type="text/javascript">
+                    document.getElementById("home").onclick = function () {
+                        window.location.href = "index.html";
+                    };
+                </script>
+            </div>
+        </div>
+
+    </body>
+</html>

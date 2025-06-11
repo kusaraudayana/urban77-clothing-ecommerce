@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Login form</title>
+      <link rel="stylesheet" href="style.css">
+      <style>
+        body {
+             display: flex;
+            justify-content: center;
+             align-items: center;
+             min-height: 100vh;
+             background: url('Allimages/background2.jpg') no-repeat;
+             background-size: cover;
+             background-position: center;
+}
+    </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="register">
+                <h2>Login</h2>
+                <form action="login_form.php" method="post" id="register">
+                    <label for="username">Username :</label><br>
+                    <input type="text" name="username" placeholder="username" id="name"><br>
+                    <label for="password">Password :</label><br>
+                    <input type="password" name="password" placeholder="password" id="name"><br>
+                    <button type="submit" name="submit">Login</button> <br>
+                    <p id="name">Don't have an account?<a href="registration_form.html">register now</a></p>
+                </form>
+            </div>
+            <div>
+                <button type="button" id="home">Home</button>
+                <script language="javascript" type="text/javascript">
+                    document.getElementById("home").onclick = function () {
+                        window.location.href = "index.html";
+                    };
+                </script>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+
+
